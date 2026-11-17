@@ -457,78 +457,68 @@
 </section>
 <?php endif; ?>
 
-<!-- 5. Editorial Literary Experience & Brand Assurances -->
-<section class="editorial-literary-section">
-    <!-- Epigraph Banner (Nghệ thuật danh ngôn khơi nguồn - Lấy cảm hứng trực tiếp từ trích dẫn bạn đọc) -->
-    <div class="literary-epigraph-banner">
-        <div class="epigraph-ornament-top">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L14.39 8.26L21 9.27L16.5 14.14L17.77 21L12 17.77L6.23 21L7.5 14.14L3 9.27L9.61 8.26L12 2Z"/>
-            </svg>
-        </div>
-        <blockquote class="epigraph-quote">
-            “Sách mở ra trước mắt tôi những chân trời mới, đưa tôi gặp gỡ những tư tưởng vĩ đại và tìm thấy sự bình yên trong tâm hồn.”
-        </blockquote>
-        <div class="epigraph-attribution">
-            <span class="epigraph-rule"></span>
-            <span class="epigraph-author">DANH NGÔN BẠN ĐỌC BOOKSTORE</span>
-            <span class="epigraph-rule"></span>
-        </div>
-    </div>
+<!-- 5. Editorial Literary Experience & Brand Sanctuary (Cách điệu hoàn hảo, chuẩn phong cách Boutique Bookstore) -->
+<section class="editorial-literary-section" style="margin-bottom: var(--space-16);">
+    <div class="literary-sanctuary-card">
+        <div class="sanctuary-grid">
+            <!-- Cột trái: Sứ mệnh & Đam mê sách -->
+            <div class="sanctuary-story-col">
+                <div class="sanctuary-tag">
+                    <span>✦ VĂN HÓA ĐỌC &amp; CAM KẾT TẬN TÂM</span>
+                </div>
+                <h3 class="sanctuary-title">
+                    Nâng Niu Từng Trang Sách — Đồng Hành Cùng Tri Thức Việt
+                </h3>
+                <p class="sanctuary-desc">
+                    Chúng tôi tin rằng một cuốn sách nguyên vẹn với gáy vuông vắn, trang in thơm mùi giấy mới chính là niềm hạnh phúc trọn vẹn nhất của người đọc. BookStore không ngừng nỗ lực tuyển chọn ấn phẩm tinh hoa, bao gói 3 lớp chống sốc và chăm sóc độc giả với sự tận tâm cao nhất.
+                </p>
 
-    <!-- 4 Cam kết dịch vụ (Thiết kế phẳng, thoáng đãng, không lồng card) -->
-    <div class="service-features-grid">
-        <div class="service-card">
-            <div class="service-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="16" height="13" x="1" y="6" rx="2"></rect>
-                    <path d="M17 10h4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4"></path>
-                    <circle cx="7" cy="19" r="2"></circle>
-                    <circle cx="17" cy="19" r="2"></circle>
-                </svg>
+                <!-- 3 Chỉ số tối giản - Không đóng hộp card - Typography nghệ thuật -->
+                <div class="sanctuary-stats-row">
+                    <div class="sanctuary-stat-item">
+                        <span class="stat-big-num">10.000+</span>
+                        <span class="stat-sub-text">Tựa sách &amp; VPP tuyển chọn</span>
+                    </div>
+                    <div class="sanctuary-stat-sep"></div>
+                    <div class="sanctuary-stat-item">
+                        <span class="stat-big-num">99.8%</span>
+                        <span class="stat-sub-text">Độc giả hài lòng tuyệt đối</span>
+                    </div>
+                    <div class="sanctuary-stat-sep"></div>
+                    <div class="sanctuary-stat-item">
+                        <span class="stat-big-num">24h</span>
+                        <span class="stat-sub-text">Giao hàng toàn quốc</span>
+                    </div>
+                </div>
             </div>
-            <div class="service-info">
-                <h4 class="service-title">Giao hàng toàn quốc</h4>
-                <p class="service-desc">Đóng gói cẩn thận chống va đập, bảo vệ gáy sách nguyên vẹn khi tới tay bạn.</p>
-            </div>
-        </div>
 
-        <div class="service-card">
-            <div class="service-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
-                </svg>
-            </div>
-            <div class="service-info">
-                <h4 class="service-title">100% Chính hãng</h4>
-                <p class="service-desc">Cam kết sách và văn phòng phẩm chuẩn từ các nhà xuất bản uy tín hàng đầu.</p>
-            </div>
-        </div>
+            <!-- Cột phải: Lời đề tặng danh ngôn nghệ thuật & Bản tin độc giả -->
+            <div class="sanctuary-quote-col">
+                <div class="sanctuary-quote-box">
+                    <div class="quote-glyph-wrap">
+                        <svg class="quote-glyph" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="sanctuary-quote-text">
+                        “Sách mở ra trước mắt tôi những chân trời mới, đưa tôi gặp gỡ những tư tưởng vĩ đại và tìm thấy sự bình yên trong tâm hồn.”
+                    </blockquote>
+                    <cite class="sanctuary-quote-author">
+                        — LỜI ĐỀ TẶNG BẠN ĐỌC BOOKSTORE
+                    </cite>
+                </div>
 
-        <div class="service-card">
-            <div class="service-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
-                    <path d="M21 3v5h-5"></path>
-                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
-                    <path d="M8 16H3v5"></path>
-                </svg>
-            </div>
-            <div class="service-info">
-                <h4 class="service-title">Đổi trả trong 7 ngày</h4>
-                <p class="service-desc">Hỗ trợ đổi mới nhanh chóng và miễn phí nếu có lỗi in ấn, nhòe trang hoặc gãy gập.</p>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon-box">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-                </svg>
-            </div>
-            <div class="service-info">
-                <h4 class="service-title">Tư vấn chu đáo</h4>
-                <p class="service-desc">Đội ngũ yêu sách luôn sẵn sàng trò chuyện, gợi ý tác phẩm phù hợp với bạn.</p>
+                <!-- Đăng ký nhận bản tin văn học (Tính năng chuẩn web sách thật) -->
+                <div class="literary-newsletter-box">
+                    <div class="newsletter-heading">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        <span>Nhận gợi ý sách hay &amp; ưu đãi thành viên mỗi tuần</span>
+                    </div>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận bản tin từ BookStore!'); this.reset();">
+                        <input type="email" placeholder="Nhập địa chỉ email của bạn..." required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

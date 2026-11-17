@@ -1499,6 +1499,211 @@ button, input, select, textarea {
     gap: var(--space-6);
 }
 
+/* ==========================================================================
+   Literary & Cultural Sanctuary (Masterpiece Editorial Section - No Nested Cards)
+   ========================================================================== */
+.literary-sanctuary-card {
+    background: #faf7f2;
+    border: 1px solid #ebdcd0;
+    border-radius: var(--radius-xl);
+    padding: var(--space-10) var(--space-8);
+    position: relative;
+    box-shadow: 0 4px 24px -6px rgba(15, 76, 58, 0.05);
+    overflow: hidden;
+}
+
+.literary-sanctuary-card::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid rgba(15, 76, 58, 0.08);
+    border-radius: calc(var(--radius-xl) - 4px);
+    pointer-events: none;
+}
+
+.sanctuary-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sanctuary-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-brand-primary);
+    background: rgba(15, 76, 58, 0.08);
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-3);
+}
+
+.sanctuary-title {
+    font-family: var(--font-display);
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--color-ink-primary);
+    margin-bottom: var(--space-4);
+}
+
+.sanctuary-desc {
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: var(--color-ink-secondary);
+    margin-bottom: var(--space-6);
+}
+
+.sanctuary-stats-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(15, 76, 58, 0.12);
+}
+
+.sanctuary-stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-big-num {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+    line-height: 1.1;
+}
+
+.stat-sub-text {
+    font-size: 12px;
+    color: var(--color-ink-muted);
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.sanctuary-stat-sep {
+    width: 1px;
+    height: 36px;
+    background-color: #d8cdbf;
+}
+
+/* Cột phải: Quote & Newsletter */
+.sanctuary-quote-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.sanctuary-quote-box {
+    background: #ffffff;
+    border: 1px solid #ebdcd0;
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    position: relative;
+    box-shadow: 0 2px 12px -2px rgba(24, 24, 27, 0.04);
+}
+
+.quote-glyph-wrap {
+    margin-bottom: var(--space-2);
+}
+
+.quote-glyph {
+    color: var(--color-brand-primary);
+    opacity: 0.35;
+}
+
+.sanctuary-quote-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-brand-primary);
+    margin-bottom: var(--space-3);
+}
+
+.sanctuary-quote-author {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #8c827a;
+    display: block;
+}
+
+.literary-newsletter-box {
+    background: rgba(15, 76, 58, 0.04);
+    border: 1px dashed rgba(15, 76, 58, 0.2);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+}
+
+.newsletter-heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-brand-primary);
+    margin-bottom: var(--space-3);
+}
+
+.newsletter-heading svg {
+    color: var(--color-brand-primary);
+    flex-shrink: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #d1c4b7;
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    font-size: 13px;
+    color: var(--color-ink-primary);
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--color-brand-primary);
+}
+
+.newsletter-form button {
+    background: var(--color-brand-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    background: var(--color-brand-hover);
+}
+
+@media (max-width: 900px) {
+    .sanctuary-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+}
+
 /* 1. Grand Epigraph Banner (Nghệ thuật danh ngôn tinh tế như Image 2) */
 .literary-epigraph-banner {
     background: #fbf8f3;
